@@ -1,0 +1,178 @@
+body {
+	background: #fafafa;
+	margin:0px;
+}
+
+.header {
+	background:#000;
+	color:#fff;
+	padding:10px 0;
+	font-size:13px;
+	position:fixed;
+    top:0px;
+    width:100%;
+    z-index:1;
+}
+
+.header .title{
+	float:left;
+	font-size:1.2em;
+	margin: 5px 0;
+}
+
+.header .control {
+	float:right;
+}
+
+.header .usernameInput {
+	margin: 10px 0 0 0;
+	width:100%;
+	float:left;
+}
+
+.btn-default {
+    width: 160px;
+    text-align: left;
+}
+
+.option {
+	cursor:hand;
+}
+
+.content {
+	float:none !important;
+	min-width:320px;
+	margin:0 auto;
+	padding:0px;
+}
+
+#container {
+	padding-top:80px;
+	max-width:640px;
+	min-width:320px;
+	margin:0 auto;
+}
+
+#container .loadingMsg,
+#container .end_msg {
+    margin-bottom: 30px;
+	text-align:center;
+	font-size:1.4em;
+}
+
+#container .box{
+	padding:0 !important;
+}
+
+#container .item {
+	padding: 0 0 15px 0;
+	background-color:#fff;
+	border: 1px solid #edeeee;
+	border-radius: 3px;
+    margin-bottom: 30px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+#container .item img {
+	width:100%;
+	margin-bottom:10px;
+}
+
+#container .item .caption {
+	text-align:left;
+	margin:0 15px;
+}
+
+#container .item .info {
+	margin: 15px 0 0 15px;
+	float:left;
+}
+
+#container .item .favBtn {
+	margin: 12px 0 0 0;
+	float:right;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+#container .item .favBtn:before,
+#container .item .favBtn:after {
+    position: absolute;
+    content: "";
+    left: 15px;
+    top: 0;
+    width: 15px;
+    height: 24px;
+    background: #ccc;
+    -moz-border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#container .item .favBtn:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+#container .item .favBtn.clicked:before,
+#container .item .favBtn.clicked:after {
+	background: #ff7f7f;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.player {
+	position:relative;
+}
+
+.player .btn {
+ 	align-items: center;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    /*pointer-events: none;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.player .btn .playIcon {
+	background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFABAMAAAA/vriZAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURQAAAP///////////////////////////yN+nV8AAAAHdFJOUwC8E+o/bo54pz/7AAACVklEQVR42u2c203DQBAAU0MqoAgKoARaQUi4fcQjwXHutfdxO0EzFYyEJtjn2z2dREREREREREREREREREREREREREREREREREREROQhONMF31/hgtvbC1xw+3iCC27PdMHtTBdEh/IliA7lW5Acyo8gOJRfQW4oF0FsKBdBbChXQWoof4LQUHaCzFD2gshQ9oLIUG4EiaHcCgJDOQjyQjkK4kI5CuJCuROkhXIvCAulIMgKpSSICqUkiAqlKEgKpSwICqUiyAmlJogJpSaICaUqSAmlLggJpSHICKUliAilJYgIpSlICKUtCAilI5gfSk8wPZSeYHooXcHsUPqCyaEMCOaGMiKYGsqIYGooQ4KZoYwJJoYyKJgXyqhgWiijgmmhDAtmhTIumBRKQDAnlIhgSigRwZRQQoIZocQEE0IJCq4PJSq4PJSo4PJQwoKrQ4kLLg5lQnBtKDOCS0OZEVwaypTgylDmBBeG8k8F6X9ieiT4nxn6DzX9Xx39YYH+uIV/YKU/8tNfmuivnfQXd/zRB/3wiH78Rj/ApB8B4w/R6Z8h6B9y6J/C6B8T8Z9j6R+06VcC6Jcq6NdS8Bd76Fej6JfL6Nfz6Bcc8VdE6Zds6deU6Re96Vfl8cMG9HEN+sALfWSIPnSFH1ujD/7RRyfpw6f08V38ADR9hJw+hE9fY0BfBIFfpUFfRkJf50JfiENfKYRfykRfa0VfDEZfrUZfTodf70dfkEhfMUlf0klfc4pfFItftSsiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIvJgfALwrytKH1wdpAAAAABJRU5ErkJggg==);
+    background-size: 100% 100%;
+    border: 0;
+    min-height: 100px;
+    min-width: 100px;
+    padding: 0;
+}
+
+
