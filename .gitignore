@@ -1,1 +1,3 @@
-vender/*
+vendor/*
+tests/*
+storage/*
